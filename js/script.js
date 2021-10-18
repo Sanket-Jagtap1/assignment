@@ -74,6 +74,8 @@ function checktype() {
     document.getElementById("screen2").style.display = "none";
     document.getElementById("dysentery").style.display = "block";
     document.getElementById("no-dehydration").style.display = "none";
+    document.getElementById("some-dehydration").style.display = "none";
+    document.getElementById("severe-dehydration").style.display = "none";
   } else if (
     (sym1 && sym3 && days) ||
     (sym4 && sym6 && days) ||
