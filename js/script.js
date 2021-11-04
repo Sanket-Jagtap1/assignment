@@ -1,16 +1,12 @@
+
 function Consultation() {
   
 
-  if (document.getElementById("diarrhoea").checked == true && document.getElementById("date").value != '' && document.getElementById("Patientname").value != '' && document.getElementById("Patientcontact").value != '') {
+
     document.getElementById("screen1").style.display = "none";
     document.getElementById("screen2").style.display = "block";
     window.scrollTo(0, 0);
-  }
-  
-  else if(document.getElementById("fever").checked==true || document.getElementById("Immunization").checked==true || document.getElementById("cold").checked==true ||  document.getElementById("other").checked==true){
-    alert("Page under development…");
-    
-  }
+ 
 }
 
 function validate(){
@@ -70,7 +66,7 @@ function checktype() {
     document.getElementById("no-dehydration").style.display = "block";
   }
 
-  if (document.getElementById("stool").value == "yes") {
+  if (document.getElementById("yes").checked == true) {
     document.getElementById("screen2").style.display = "none";
     document.getElementById("dysentery").style.display = "block";
     document.getElementById("no-dehydration").style.display = "none";
